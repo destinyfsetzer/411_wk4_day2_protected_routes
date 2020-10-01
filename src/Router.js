@@ -36,6 +36,7 @@ const Router = () => {
             <ProtectedRoute exact path="/" component={Home} />
             <ProtectedRoute path="/about" component={About} />
             <ProtectedRoute path="/car/:id" component={Car} />
+            <Route path="*" component={() => 'WRONGO BONGO! 404 IT AINT HERE'} />
         </Switch>
     );
 };
